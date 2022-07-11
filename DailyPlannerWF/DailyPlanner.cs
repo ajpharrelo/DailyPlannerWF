@@ -193,7 +193,6 @@ namespace DailyPlannerWF
             btnDeleteTask.Enabled = false;
             btnTaskComplete.Enabled = false;
             btnSaveTasks.Enabled = false;
-            btnToggleAlert.Enabled = false;
             KeyDown += DailyPlanner_KeyDown;
         }
 
@@ -236,23 +235,11 @@ namespace DailyPlannerWF
             {
                 btnDeleteTask.Enabled = true;
                 btnTaskComplete.Enabled = true;
-
-                if(taskView.SelectedItems[0].SubItems[2].Text == "False")
-                {
-                    btnToggleAlert.Text = "Enable reminder";
-                    btnToggleAlert.Enabled = true;
-                }
-                else
-                {
-                    btnToggleAlert.Text = "Disable reminder";
-                    btnToggleAlert.Enabled = true;
-                }
             }
             else
             {
                 btnDeleteTask.Enabled = false;
                 btnTaskComplete.Enabled = false;
-                btnToggleAlert.Enabled = false;
             }
         }
 

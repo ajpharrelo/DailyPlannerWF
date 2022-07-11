@@ -54,7 +54,6 @@ namespace DailyPlannerWF
             this.btnTaskComplete = new System.Windows.Forms.Button();
             this.btnSaveTasks = new System.Windows.Forms.Button();
             this.btnLoadTasks = new System.Windows.Forms.Button();
-            this.btnToggleAlert = new System.Windows.Forms.Button();
             this.statusBar.SuspendLayout();
             this.balloonMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -266,21 +265,10 @@ namespace DailyPlannerWF
             this.btnLoadTasks.UseVisualStyleBackColor = true;
             this.btnLoadTasks.Click += new System.EventHandler(this.btnLoadTasks_Click);
             // 
-            // btnToggleAlert
-            // 
-            this.btnToggleAlert.Location = new System.Drawing.Point(274, 432);
-            this.btnToggleAlert.Name = "btnToggleAlert";
-            this.btnToggleAlert.Size = new System.Drawing.Size(127, 32);
-            this.btnToggleAlert.TabIndex = 14;
-            this.btnToggleAlert.Text = "Add reminder";
-            this.btnToggleAlert.UseVisualStyleBackColor = true;
-            this.btnToggleAlert.Click += new System.EventHandler(this.btnToggleAlert_Click);
-            // 
             // DailyPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(800, 502);
-            this.Controls.Add(this.btnToggleAlert);
             this.Controls.Add(this.btnLoadTasks);
             this.Controls.Add(this.btnSaveTasks);
             this.Controls.Add(this.groupBox1);
@@ -333,7 +321,6 @@ namespace DailyPlannerWF
         private System.Windows.Forms.Button btnTaskComplete;
         private System.Windows.Forms.Button btnSaveTasks;
         private System.Windows.Forms.Button btnLoadTasks;
-        private System.Windows.Forms.Button btnToggleAlert;
     }
 }
 
