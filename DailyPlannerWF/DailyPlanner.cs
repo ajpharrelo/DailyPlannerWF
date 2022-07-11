@@ -292,15 +292,5 @@ namespace DailyPlannerWF
 
         }
 
-        private void btnToggleAlert_Click(object sender, EventArgs e)
-        {
-            ListViewItem currentItem = taskView.SelectedItems[0];
-
-            if(currentItem.SubItems[2].Text == "True")
-            {
-
-            }
-            
-        }
     }
 }
